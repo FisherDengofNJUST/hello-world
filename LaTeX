@@ -1,0 +1,171 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{ctex}
+
+\title{上海闵行城市综合管理和应急联动平台用户手册}
+\author{邓啸}
+\date{2016-08-22}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{文档介绍}
+    \subsection{文档目的}本文档是《上海闵行城市综合管理和应急联动平台数据系统》的使用指导，便于乙方使用时查看。
+    \subsection{文档范围}本文档介绍了《上海闵行城市综合管理和应急联动平台数据系统》中，大联动门户受理页面、大联动门户处置页面、“条块”处置动态页面、街镇处置动态页面、街镇超时动态页面、委办局处置动态页面、以及委办局超时动态页面的使用方式以及注意事项。
+    \subsection{读者对象}本文档主要适用于甲方操作人员以及乙方开发人员。
+\newpage
+
+\section{产品说明}
+    \subsection{产品目标}《上海闵行城市综合管理和应急联动平台数据系统》使用FineBI进行开发，主要用于展示上海市闵行区公安系统案件情况的数据平台。
+    \subsection{产品面向的用户群体}甲方操作人员。
+    \subsection{产品范围}大联动门户-受理页面、大联动门户-处置页面、“条块”处置动态页面、街镇处置动态页面、委办局处置动态页面、街镇超时动态页面、委办局超时动态页面
+\newpage
+
+\section{详细功能操作说明}
+    \subsection{大联动门户-受理页面}
+        \subsubsection{受理动态模块}
+            \paragraph{3.1.1.1} 主要功能及其操作方法
+                \subparagraph{a.}展示一年的当前与环期数据(按月)
+
+                              操作方法：
+
+							  Step1. 修改“日期区间”控件为所需查看年份的始末日期(如查看2016年，日期控件需设为：“2016-01-01”-“2016-12-31”)，并点击查询按钮；
+
+							  Step2. 点击任意柱子，在上方的标签中点击“▼”符号，移动鼠标至“切换维度”并选择“年”(如图1)，即可正确展示。
+                              　　\begin{figure}[htb]
+   　　                               \centering
+   　　                               \includegraphics[scale=0.7]{sldt01.png}
+   　　                               \caption{受理动态模块}
+　　                              \end{figure}
+                 \subparagraph{b.}展示一月的当前、环期数据(按日)
+
+
+							  操作方法：
+
+
+							  Step1. 修改“日期区间”控件为所需查看月份的始末日期(如查看2016年5月，日期控件需设为：“2016-05-01”-“2016-05-31”)，并点击查询按钮；
+
+
+							  Step2. 点击任意柱子，在上方的标签中点击“▼”符号，移动鼠标至“切换维度”并选择“月”，即可正确展示。
+
+				 \subparagraph{c.}展示一周的当前、环期数据(按周几)
+
+
+							  操作方法：
+
+
+							  Step1. 修改“日期区间”控件为所需查看的周的始末日期(如查看2016年5月2日至8日这周，日期控件需设为：“2016-05-02”-“2016-05-08”)，并点击查询按钮；
+
+			\paragraph{3.1.1.2} 说明
+
+			在修改“日期区间”控件后请将模块的维度切换至对应的维度，避免出现显示上的错误。
+\newpage
+
+        \subsubsection{案件情况模块}
+
+        	\paragraph{3.1.2.1} 主要功能及其操作方法
+                \subparagraph{a.}“来源”、“类型”、“分布”、“专题”四个维度的切换
+
+                    操作方法：将鼠标移至案件来源字段(即表格中左数第一个字段)中的任意单元格，点击出现的“▼”符号，移动鼠标至“切换维度”并选择所需的选项(如图2)即可正确展示。
+
+                              　　\begin{figure}[htb]
+   　　                               \centering
+   　　                               \includegraphics[scale=0.7]{ajqk1.png}
+   　　                               \caption{案件情况模块}
+　　                              \end{figure}
+        	\paragraph{3.1.2.2} 说明
+
+                    这一模块中的“环比”与“同比”字段显示的为当前案件数与环期值或者同期值的比值，而并非增加或减少的部分。
+
+    \subsection{大联动门户-受理页面}
+        \subsubsection{办理绩效模块}
+            \paragraph{3.2.1.1} 主要功能及其操作方法
+                \subparagraph{a.}“委办局”与“街镇”维度切换
+
+                操作方法：点击页面上方的“单位”下拉框(如图3)，通过选择相应需展示的维度并点击查询按钮即可完成维度的切换。
+                              　　\begin{figure}[htb]
+   　　                               \centering
+   　　                               \includegraphics[scale=0.2]{bljx01.png}
+   　　                               \caption{办理绩效模块}
+　　                              \end{figure}
+                \subparagraph{b.}图表切换
+
+                操作方法：
+                Step1. 点击模块右上方的“快捷设置”按钮(如图4)；
+                              　　\begin{figure}[htb]
+   　　                               \centering
+   　　                               \includegraphics[scale=0.4]{bljx02.png}
+   　　                               \caption{办理绩效模块}
+　　                              \end{figure}
+                Step2. 在弹出的页面中点击左上方的“表”标签(如图5)，并点击“确定”按钮即可完成图表的切换。
+                              　　\begin{figure}[htb]
+   　　                               \centering
+   　　                               \includegraphics[scale=0.7]{bljx3.png}
+   　　                               \caption{办理绩效模块}
+　　                              \end{figure}
+            \paragraph{3.2.1.2} 说明
+
+            如在表格中需要依据得分状况对维度进行排序，只需将鼠标移动至“得分”字段表头中，点击出现的“排序”按钮(如图6)并依据实际情况选择排序方式即可。
+                              　　\begin{figure}[htb]
+   　　                               \centering
+   　　                               \includegraphics[scale=0.5]{bljx4.png}
+   　　                               \caption{办理绩效模块}
+　　                              \end{figure}
+\newpage
+        \subsubsection{办理情况模块}
+            \paragraph{3.2.2.1} 主要功能及其操作方法
+                \subparagraph{a.}“委办局”与“街镇”维度切换
+
+                操作方法：同“办理绩效”模块。
+
+                \subparagraph{b.}图表切换
+
+                操作方法：
+                Step1. 点击模块右上方的“快捷设置”按钮(如图4)；
+
+                Step2. 在弹出页面的左上方选择“坐标轴图”将自动选择分类为“结案情况”(如图7)
+                              　　\begin{figure}[htb]
+   　　                               \centering
+   　　                               \includegraphics[scale=0.7]{blqk2.png}
+   　　                               \caption{办理情况模块}
+　　                              \end{figure}
+
+                此时点击确定将以堆积柱状图的形式展示结案情况(如图8)；
+                              　　\begin{figure}[htb]
+   　　                               \centering
+   　　                               \includegraphics[scale=0.7]{blqk3.png}
+   　　                               \caption{办理情况模块}
+　　                              \end{figure}
+
+                Step3. 在弹出页面的左上方选择“堆积条形图”标签将自动选择分类为“超时情况”(如图9)
+                              　　\begin{figure}[htb]
+   　　                               \centering
+   　　                               \includegraphics[scale=0.7]{blqk4.png}
+   　　                               \caption{办理情况模块}
+　　                              \end{figure}
+
+                此时点击确定将以堆积柱状图的形式展示超时情况(如图10)
+                              　　\begin{figure}[htb]
+   　　                               \centering
+   　　                               \includegraphics[scale=0.7]{blqk5.png}
+   　　                               \caption{办理情况模块}
+　　                              \end{figure}
+
+            \paragraph{3.2.2.2} 说明
+
+            无
+\newpage
+
+        \subsubsection{案件管理模块}
+            \paragraph{}如果疑难案件数目少显示不清，可点击图例中的“已催案件”与“未催案件”(如图11)取消显示这两类案件的情况。
+                              　　\begin{figure}[htb]
+   　　                               \centering
+   　　                               \includegraphics[scale=0.7]{ajqk01.png}
+   　　                               \caption{办理情况模块}
+　　                              \end{figure}
+
+
+\end{document}
